@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+nav {
+  display: flex;
+  background-color: #3C3A39;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 10px;
+}
+
+#logo {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  width: 180px;
+  
+}
+
+#menu {
+    -webkit-filter: invert(100%);
+    height: 2rem;
+    width: 2rem;
+    
+}

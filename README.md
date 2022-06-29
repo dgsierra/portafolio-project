@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps:
 
 ## 🤝 Contributing
 
-Feel free to pull any error that you find.
+Feel free to PR any error that you find.
 
 ## Show your support
 
