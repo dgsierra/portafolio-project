@@ -2,7 +2,7 @@
 
 # Portafolio of Daniel
 
-This is my portafolio, feel free to contact me if you have any question.
+This is my portafolio, feel free to contact me if you have any questions.
 
 ## Built With
 
@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps:
 
 ## 🤝 Contributing
 
-Feel free to pull any error.
+Feel free to pull any error that you find.
 
 ## Show your support
 
