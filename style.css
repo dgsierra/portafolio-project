@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  }
+}
 
 nav {
   display: flex;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   justify-content: space-between;
   font-size: 24px;
   padding: 10px;
@@ -20,7 +20,6 @@ section {
   display: flex;
   padding: 24px;
   flex-direction: column;
-
 }
 
 #logo {
@@ -29,8 +28,6 @@ section {
   width: 180px;
   text-shadow: 3px 2px 1px #000;
   padding-left: 12px;
-  
-  
 }
 
 #menu {
@@ -47,16 +44,14 @@ section {
   font-size: 64px;
   letter-spacing: 2px;
   padding: 6px;
-
 }
 
 .subheadline {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 700;
   padding: 6px;
-  
 }
 
 .headline--text {
@@ -67,7 +62,6 @@ section {
   text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
-
 }
 
 .icons {
@@ -78,6 +72,6 @@ section {
   background-image: url("./Illustration.background.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   background-size: 15vh;
 }
