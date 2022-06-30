@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-nav {
+header {
   display: flex;
   background-color: #3c3a39;
   justify-content: space-between;
@@ -12,14 +12,19 @@ nav {
   padding: 10px;
 }
 
-body {
-  height: 100vh;
-}
-
 section {
   display: flex;
   padding: 24px;
   flex-direction: column;
+  height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
 }
 
 #logo {
@@ -65,7 +70,9 @@ section {
 }
 
 .icons {
-  align-items: baseline;
+  /* flex-direction: row; */
+  text-align: left;
+  justify-content: space-between;
 }
 
 .welcome {
@@ -74,4 +81,6 @@ section {
   background-position: right bottom;
   background-color: #1c1a19;
   background-size: 15vh;
+  flex-wrap: wrap;
+  justify-content: center;
 }
