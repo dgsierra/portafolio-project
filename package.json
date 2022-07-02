@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-project",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonzalesi/portafolio-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgonzalesi/portafolio-project/issues"
+  },
+  "homepage": "https://github.com/dgonzalesi/portafolio-project#readme",
+  "devDependencies": {
+    "hint": "^7.0.1"
+  }
+}
