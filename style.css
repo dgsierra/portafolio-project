@@ -19,10 +19,6 @@ section {
   height: 100vh;
 }
 
-ul {
-  list-style: none;
-}
-
 li {
   display: inline-block;
 }
@@ -70,17 +66,241 @@ li {
 }
 
 .icons {
-  /* flex-direction: row; */
   text-align: left;
   justify-content: space-between;
 }
 
 .welcome {
-  background-image: url("./Illustration.background.png");
+  background-image: url("./img/Illustration.background.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #1c1a19;
   background-size: 15vh;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.aboutme {
+  background-image: url("./img/aboutme.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #1c1a19;
+  background-size: 30vh;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.orange {
+  color: #fff;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 20px 10px 12px;
+  border: none;
+  justify-content: center;
+}
+
+.light {
+  /* color: #091e42; */
+  color: #091e42;
+  border: #8993a4 1px solid;
+  padding: 10px 12px 10px 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.smoke {
+  color: #fff;
+  border: #8993a4 1px solid;
+  padding: 10px 12px 10px 12px;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.text--title {
+  font-family: 'Crete Round', serif;
+  color: #1c1a19;
+  font-size: 52px;
+  font-weight: 200;
+  padding: 25px 10px 50px 0;
+  border-bottom: #212121 1px solid;
+  margin-bottom: 50px;
+}
+
+.mywork {
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.image--index {
+  width: 450px;
+  height: 350px;
+  padding: 0 10% 0 10%;
+}
+
+.text--subtitle {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 200;
+  letter-spacing: 0.14rem;
+  color: #091e42;
+  padding: 20px 50px 20px 0;
+}
+
+.text--paragraph {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  padding: 20px 50px 20px 0;
+  color: #091e42;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+.buttons--mywork {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 55px 0.15fr 0.15fr 0.15fr;
+  grid-template-rows: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-image: url("./img/card.background.png"), linear-gradient(#3c3a39 20%, #1c1a19);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  padding: 20px 20px 20px 20px;
+  height: 60vh;
+}
+
+.see--project {
+  display: grid;
+  grid-template-columns: 0.25fr 0.15fr 0.2fr 0.2fr;
+  grid-template-rows: 40px;
+  grid-gap: 10px;
+}
+
+.project--title {
+  font-family: 'Crete Round', serif;
+  font-size: 44px;
+  font-weight: 200;
+  letter-spacing: 0.14rem;
+  color: #fff;
+  padding: 20px 50px 20px 0;
+}
+
+.project--text {
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+  padding: 20px 50px 20px 0;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-weight: 200;
+}
+
+.buttons--project {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 0.15fr 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 50px;
+}
+
+.card--bottom {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.orange--bottom {
+  color: #fff;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 20px 10px 12px;
+  border: none;
+  justify-content: center;
+  grid-column: 1 / -1;
+}
+
+.cards {
+  display: grid;
+}
+
+.language {
+  background-color: #1c1a19;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 25px 0 35px 0;
+}
+
+.skills--title {
+  order: -1;
+}
+
+.skills-img {
+  order: -2;
+  padding: 25px 0 0 0;
+}
+
+.skill--list--container {
+  order: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.skill--item {
+  font-size: 30px;
+  font-family: 'Crete Round', serif;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  padding: 0 0 0 125px;
+}
+
+.skill--item2 li {
+  font-size: 30px;
+  font-family: 'Crete Round', serif;
+  justify-content: center;
+  color: #fff;
+  padding: 0 0 0 150px;
+}
+
+.skill--item3 li {
+  font-size: 30px;
+  font-family: 'Crete Round', serif;
+  justify-content: center;
+  color: #fff;
+  padding: 0 0 0 40px;
 }
