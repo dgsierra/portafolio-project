@@ -65,9 +65,10 @@ li {
   padding: 6px;
 }
 
-.icons {
-  text-align: left;
-  justify-content: space-between;
+.icons li {
+  /* text-align: left;
+  justify-content: space-between; */
+  float: right;
 }
 
 .welcome {
@@ -113,6 +114,16 @@ li {
   border: #8993a4 1px solid;
   padding: 10px 12px 10px 12px;
   font-family: 'Inter', sans-serif;
+  float: right;
+}
+
+/* .light li {
+  float: clear;
+} */
+
+#html {
+  clear: right;
+  background-color: aqua;
 }
 
 .smoke {
