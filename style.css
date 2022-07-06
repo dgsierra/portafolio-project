@@ -55,7 +55,7 @@ li {
   padding: 6px;
 }
 
-.headline--text {
+.headlinetext {
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -125,7 +125,7 @@ li {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.text--title {
+.texttitle {
   font-family: 'Crete Round', serif;
   color: #1c1a19;
   font-size: 52px;
@@ -151,13 +151,13 @@ li {
   margin: 0;
 }
 
-.image--index {
+#imageindex {
   width: 450px;
   height: 350px;
   padding: 0 10% 0 10%;
 }
 
-.text--subtitle {
+#textsubtitle {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 200;
@@ -166,7 +166,7 @@ li {
   padding: 20px 50px 20px 0;
 }
 
-.text--paragraph {
+#textparagraph {
   font-family: 'Inter', sans-serif;
   text-align: left;
   padding: 20px 50px 20px 0;
@@ -175,7 +175,7 @@ li {
   line-height: 1.8;
 }
 
-.buttons--mywork {
+.buttonsmywork {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 55px 0.15fr 0.15fr 0.15fr;
@@ -195,14 +195,14 @@ li {
   height: 60vh;
 }
 
-.see--project {
+.seeproject {
   display: grid;
   grid-template-columns: 0.25fr 0.15fr 0.2fr 0.2fr;
   grid-template-rows: 40px;
   grid-gap: 10px;
 }
 
-.project--title {
+.projecttitle {
   font-family: 'Crete Round', serif;
   font-size: 44px;
   font-weight: 200;
@@ -211,7 +211,7 @@ li {
   padding: 20px 50px 20px 0;
 }
 
-.project--text {
+.projecttext {
   font-family: 'Inter', sans-serif;
   text-align: left;
   padding: 20px 50px 20px 0;
@@ -221,21 +221,21 @@ li {
   font-weight: 200;
 }
 
-.buttons--project {
+.buttonsproject {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 0.15fr 0.2fr 0.2fr 0.2fr;
   grid-template-rows: 50px;
 }
 
-.card--bottom {
+.cardbottom {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
-.orange--bottom {
+.orangebottom {
   color: #fff;
   background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
@@ -268,7 +268,7 @@ li {
   padding: 25px 0 35px 0;
 }
 
-.skills--title {
+.skillstitle {
   order: -1;
 }
 
@@ -277,13 +277,13 @@ li {
   padding: 25px 0 0 0;
 }
 
-.skill--list--container {
+.skilllistcontainer {
   order: -1;
   padding: 0;
   margin: 0;
 }
 
-.skill--item {
+.skillitem {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   justify-content: center;
@@ -291,7 +291,7 @@ li {
   padding: 0 0 0 125px;
 }
 
-.skill--item2 li {
+.skillitem2 li {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   justify-content: center;
@@ -299,7 +299,7 @@ li {
   padding: 0 0 0 150px;
 }
 
-.skill--item3 li {
+.skillitem3 li {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   justify-content: center;
@@ -327,7 +327,7 @@ form {
   justify-content: center;
 }
 
-.contact--input {
+.contactinput {
   border-style: hidden;
   border-bottom: solid 1px #ccc;
   background-color: rgb(255, 255, 255);
@@ -335,6 +335,10 @@ form {
   margin-top: 30px;
   text-indent: 20px;
   padding-bottom: 20px;
+}
+
+input:focus {
+  border: none;
 }
 
 ::placeholder {
@@ -354,7 +358,7 @@ textarea {
   padding-top: 25px;
 }
 
-#form--title {
+#formtitle {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   text-align: center;
@@ -366,7 +370,7 @@ textarea:hover {
   background-color: #ccc;
 }
 
-#footer--icons {
+#footericons {
   -webkit-filter: invert(60%);
   padding: 40px;
 }
@@ -381,4 +385,9 @@ textarea:hover {
   padding: 15px 10px 15px 10px;
   border: none;
   cursor: pointer;
+  z-index: 500;
+}
+
+#getintouch:focus {
+  background-color: #a14300;
 }
