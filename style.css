@@ -370,3 +370,17 @@ textarea:hover {
   -webkit-filter: invert(60%);
   padding: 40px;
 }
+
+#getintouch {
+  width: 50vw;
+  color: #fff;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  margin: 20px 15vw 20px 15vw;
+  padding: 15px 10px 15px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
