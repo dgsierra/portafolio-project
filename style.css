@@ -2,6 +2,15 @@ li {
   list-style: none;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -553,6 +562,12 @@ textarea:hover {
     width: 1fr;
     height: auto;
     margin-right: 15px;
+    transition: width 0.6s ease-in 3s;
+  }
+
+  #imageindex:hover {
+    width: 35rem;
+    transition: width 0.6s ease-in;
   }
 
   #myworktext {
@@ -703,5 +718,9 @@ textarea:hover {
   .hovereffect:hover {
     background-color: #3c3a39;
     transition: 0.7s ease;
+  }
+
+  #envelope {
+    animation: rotation 10s infinite linear;
   }
 }
