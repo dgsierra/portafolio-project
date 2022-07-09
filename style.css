@@ -93,9 +93,9 @@ form {
 
 .headlinetext {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
@@ -142,14 +142,13 @@ form {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  padding: 10px 20px 10px 12px;
+  padding: 10px 20px 10px 0;
   border: none;
   justify-content: center;
   text-align: center;
 }
 
 .light {
-  /* color: #091e42; */
   color: #091e42;
   border: #8993a4 1px solid;
   padding: 10px 12px 10px 12px;
@@ -194,7 +193,6 @@ form {
 #imageindex {
   width: 450px;
   height: 350px;
-  padding: 0 10% 0 10%;
 }
 
 #textsubtitle {
@@ -238,7 +236,6 @@ form {
   display: grid;
   grid-template-columns: 0.25fr 0.15fr 0.2fr 0.2fr;
   grid-template-rows: 40px;
-  grid-gap: 10px;
 }
 
 .projecttitle {
@@ -474,6 +471,7 @@ textarea:hover {
     flex-direction: row;
     justify-content: initial;
     align-items: center;
+    width: 100vw;
   }
 
   #texttitle {
@@ -552,10 +550,17 @@ textarea:hover {
   }
 
   #imageindex {
-    min-width: 600px;
     width: 1fr;
     height: auto;
-    padding-right: 15px;
+    margin-right: 15px;
+  }
+
+  #myworktext {
+    display: flex;
+    flex-direction: column;
+    border: #000;
+    width: .4fr;
+    min-width: .3fr;
   }
 
   .aboutme {
@@ -564,7 +569,7 @@ textarea:hover {
     background-size: 100vh;
     justify-content: center;
     border-bottom: #fff 1px solid;
-    width: 95vw;
+    width: 100vw;
     padding: 15px;
   }
 
@@ -574,8 +579,9 @@ textarea:hover {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    width: 93.5vw;
-    padding: 25px;
+    width: 100vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
   }
 
   .skillstitle {
@@ -586,6 +592,10 @@ textarea:hover {
 
   .skillstitle h2 {
     font-size: 40px;
+  }
+
+  .aboutmestyle {
+    margin-left: 5vw;
   }
 
   .skills-img {
@@ -606,12 +616,6 @@ textarea:hover {
 
   #textaboutme {
     max-width: 512px;
-  }
-
-  #myworktext {
-    display: flex;
-    flex-direction: column;
-    border: #000;
   }
 
   #worksdesktop {
@@ -650,8 +654,8 @@ textarea:hover {
 
   #formtitle {
     padding: 0 0 0 0;
-    min-width: 49%;
-    font-size: 55px;
+    min-width: 40%;
+    font-size: 3rem;
     text-align: left;
     padding-right: 15px;
     max-height: 50vh;
@@ -660,7 +664,7 @@ textarea:hover {
   #contactform {
     padding-left: 15px;
     max-width: 49%;
-    min-width: 49%;
+    min-width: 69%;
     display: flex;
     flex-direction: column;
   }
@@ -680,5 +684,26 @@ textarea:hover {
     max-width: 200px;
     align-items: stretch;
     margin-top: 30px;
+  }
+
+  #getintouch:hover {
+    background-color: #1c1a19;
+    color: #fff;
+    transition: 0.7s ease-in-out;
+  }
+
+  .headlinetext {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.9;
+  }
+
+  .subheadline {
+    font-size: 3rem;
+  }
+
+  .hovereffect:hover {
+    background-color: #3c3a39;
+    transition: 0.7s ease;
   }
 }
