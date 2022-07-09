@@ -559,8 +559,6 @@ textarea:hover {
     display: flex;
     flex-direction: column;
     border: #000;
-    width: .4fr;
-    min-width: .3fr;
   }
 
   .aboutme {
