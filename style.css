@@ -2,15 +2,6 @@ li {
   list-style: none;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -468,6 +459,7 @@ textarea:hover {
   #envelope {
     font-size: 21px;
     padding-right: 8vw;
+    animation: rotation 10s infinite linear;
   }
 
   .blackorange {
@@ -718,9 +710,5 @@ textarea:hover {
   .hovereffect:hover {
     background-color: #3c3a39;
     transition: 0.7s ease;
-  }
-
-  #envelope {
-    animation: rotation 10s infinite linear;
   }
 }
