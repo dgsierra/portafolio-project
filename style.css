@@ -1,10 +1,19 @@
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-header {
+nav {
   display: flex;
   background-color: #3c3a39;
   justify-content: space-between;
@@ -19,11 +28,22 @@ section {
   height: 100vh;
 }
 
-li {
+.iconitems {
   display: inline-block;
 }
 
-#logo {
+form {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#logonav {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   width: 180px;
@@ -31,7 +51,7 @@ li {
   padding-left: 12px;
 }
 
-#menu {
+#menuimg {
   -webkit-filter: invert(100%);
   height: 2rem;
   width: 2rem;
@@ -45,6 +65,17 @@ li {
   font-size: 64px;
   letter-spacing: 2px;
   padding: 6px;
+  transition: 0.7s ease;
+}
+
+.headline:hover {
+  color: #fff;
+}
+
+.fullmenu {
+  display: none;
+  cursor: pointer;
+  color: #ccc;
 }
 
 .subheadline {
@@ -53,13 +84,18 @@ li {
   font-size: 24px;
   font-weight: 700;
   padding: 6px;
+  transition: 0.7s ease;
+}
+
+.subheadline:hover {
+  color: #ff6b00;
 }
 
 .headlinetext {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
@@ -70,13 +106,14 @@ li {
   justify-content: space-between;
 }
 
-.welcome {
-  background-image: url("./img/Illustration.background.png");
+.blackorange {
+  background-image: url("./img/mobil.background.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #1c1a19;
   background-size: 15vh;
   justify-content: center;
+  width: 90vw;
 }
 
 .aboutme {
@@ -95,6 +132,8 @@ li {
   justify-content: center;
   padding: 0;
   overflow: auto;
+  width: 100vw;
+  height: auto;
 }
 
 .orange {
@@ -103,14 +142,13 @@ li {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  padding: 10px 20px 10px 12px;
+  padding: 10px 20px 10px 0;
   border: none;
   justify-content: center;
   text-align: center;
 }
 
 .light {
-  /* color: #091e42; */
   color: #091e42;
   border: #8993a4 1px solid;
   padding: 10px 12px 10px 12px;
@@ -118,14 +156,14 @@ li {
 }
 
 .smoke {
-  color: #fff;
   border: #8993a4 1px solid;
+  color: #fbf8f7;
   padding: 10px 12px 10px 12px;
   font-family: 'Inter', sans-serif;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.texttitle {
+#texttitle {
   font-family: 'Crete Round', serif;
   color: #1c1a19;
   font-size: 52px;
@@ -136,6 +174,7 @@ li {
 }
 
 .mywork {
+  padding: 30px;
   height: auto;
   display: flex;
   justify-content: flex-end;
@@ -154,7 +193,6 @@ li {
 #imageindex {
   width: 450px;
   height: 350px;
-  padding: 0 10% 0 10%;
 }
 
 #textsubtitle {
@@ -186,20 +224,18 @@ li {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
   background-image: url("./img/card.background.png"), linear-gradient(#3c3a39 20%, #1c1a19);
   background-repeat: no-repeat;
-  background-position-x: center;
   background-size: cover;
-  padding: 20px 20px 20px 20px;
-  height: 60vh;
+  padding: 20px;
+  height: 500px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .seeproject {
   display: grid;
   grid-template-columns: 0.25fr 0.15fr 0.2fr 0.2fr;
   grid-template-rows: 40px;
-  grid-gap: 10px;
 }
 
 .projecttitle {
@@ -207,7 +243,6 @@ li {
   font-size: 44px;
   font-weight: 200;
   letter-spacing: 0.14rem;
-  color: #fff;
   padding: 20px 50px 20px 0;
 }
 
@@ -215,7 +250,6 @@ li {
   font-family: 'Inter', sans-serif;
   text-align: left;
   padding: 20px 50px 20px 0;
-  color: #fff;
   letter-spacing: 2px;
   line-height: 1.8;
   font-weight: 200;
@@ -233,6 +267,7 @@ li {
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  cursor: pointer;
 }
 
 .orangebottom {
@@ -249,6 +284,11 @@ li {
 
 .cards {
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  height: fit-content;
+  padding: 5vh 1vw 5vh 1vw;
 }
 
 .language {
@@ -257,6 +297,7 @@ li {
   height: auto;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 .skills {
@@ -265,7 +306,10 @@ li {
   font-family: 'Inter', sans-serif;
   display: grid;
   grid-template-columns: 50px 1fr;
-  padding: 25px 0 35px 0;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .skillstitle {
@@ -295,6 +339,7 @@ li {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 0 0 0 150px;
 }
@@ -314,17 +359,6 @@ li {
   justify-content: center;
   padding: 30px;
   margin: 1vh;
-}
-
-form {
-  border: none;
-  background-color: transparent;
-  resize: none;
-  outline: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
 }
 
 .contactinput {
@@ -363,7 +397,7 @@ textarea {
   font-family: 'Crete Round', serif;
   text-align: center;
   color: #172b4d;
-  padding: 30vh 0 0 0;
+  padding: 90vh 0 0 0;
 }
 
 textarea:hover {
@@ -373,6 +407,7 @@ textarea:hover {
 #footericons {
   -webkit-filter: invert(60%);
   padding: 40px;
+  display: flex;
 }
 
 #getintouch {
@@ -390,4 +425,283 @@ textarea:hover {
 
 #getintouch:focus {
   background-color: #a14300;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    height: 2rem;
+  }
+
+  #logonav {
+    padding-left: 8vw;
+  }
+
+  .menuitem {
+    padding: 1vw;
+  }
+
+  #menuimg {
+    display: none;
+  }
+
+  .fullmenu {
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+  }
+
+  #envelope {
+    font-size: 21px;
+    padding-right: 8vw;
+  }
+
+  .blackorange {
+    background-image: url("./img/desktop.background.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: #1c1a19;
+    background-size: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    width: 100vw;
+  }
+
+  #texttitle {
+    font-family: 'Crete Round', serif;
+    color: #1c1a19;
+    font-size: 52px;
+    font-weight: 200;
+    padding: 25px 10px 50px 0;
+    border-bottom: #212121 1px solid;
+    margin-bottom: 50px;
+  }
+
+  .icons {
+    order: -1;
+    margin: 0 1vw 0 1vw;
+  }
+
+  #welcometext {
+    width: 40%;
+    margin: 0 1vw 0 1vw;
+  }
+
+  .iconitems {
+    display: list-item;
+  }
+
+  .cards {
+    display: grid;
+    width: 95vw;
+    grid-gap: 20px;
+    align-items: initial;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    padding: 30px;
+    height: auto;
+  }
+
+  .card {
+    height: auto;
+    background: linear-gradient(0deg, rgb(53, 53, 53) 0%, rgba(200, 200, 200, 0.5) 100%) url("./img/img.background.cards.png");
+    background-repeat: no-repeat;
+  }
+
+  .smoke {
+    visibility: show;
+  }
+
+  .card:hover {
+    background: url("./img/img.background.cards.png");
+    color: rgba(255, 255, 255, 0);
+    transition: 0.7s ease-in-out;
+  }
+
+  .card:hover > :nth-child(3) {
+    visibility: hidden;
+    background-color: #000;
+  }
+
+  .card .cardbottom {
+    opacity: 0;
+  }
+
+  .card:hover > .cardbottom {
+    opacity: 100;
+    transition: 0.7s ease-in-out;
+  }
+
+  .mywork {
+    width: 95vw;
+    padding: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #imageindex {
+    width: 1fr;
+    height: auto;
+    margin-right: 15px;
+  }
+
+  #myworktext {
+    display: flex;
+    flex-direction: column;
+    border: #000;
+  }
+
+  .aboutme {
+    background-image: url("./img/img.background.aboutme.png");
+    background-position: right;
+    background-size: 100vh;
+    justify-content: center;
+    border-bottom: #fff 1px solid;
+    width: 100vw;
+    padding: 15px;
+  }
+
+  .language {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
+
+  .skillstitle {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .skillstitle h2 {
+    font-size: 40px;
+  }
+
+  .aboutmestyle {
+    margin-left: 5vw;
+  }
+
+  .skills-img {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 25px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .skillitem3 li {
+    font-size: 20px;
+  }
+
+  #textaboutme {
+    max-width: 512px;
+  }
+
+  #worksdesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #textsubtitle {
+    margin-left: 15px;
+  }
+
+  #textparagraph {
+    margin-left: 15px;
+  }
+
+  .buttonsmywork {
+    display: flex;
+    margin: 15px;
+  }
+
+  .orange {
+    margin-left: 15px;
+    font-size: 17px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .containercontact {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+  }
+
+  #formtitle {
+    padding: 0 0 0 0;
+    min-width: 40%;
+    font-size: 3rem;
+    text-align: left;
+    padding-right: 15px;
+    max-height: 50vh;
+  }
+
+  #contactform {
+    padding-left: 15px;
+    max-width: 49%;
+    min-width: 69%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inputname {
+    margin-top: initial;
+  }
+
+  #getintouch {
+    width: 50vw;
+    font-size: 25px;
+    margin: initial;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 500;
+    max-width: 200px;
+    align-items: stretch;
+    margin-top: 30px;
+  }
+
+  #getintouch:hover {
+    background-color: #1c1a19;
+    color: #fff;
+    transition: 0.7s ease-in-out;
+  }
+
+  .headlinetext {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.9;
+  }
+
+  .subheadline {
+    font-size: 3rem;
+  }
+
+  .hovereffect:hover {
+    background-color: #3c3a39;
+    transition: 0.7s ease;
+  }
 }
