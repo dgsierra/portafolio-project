@@ -99,6 +99,7 @@ form {
   text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
+  transition: 0.7s ease;
 }
 
 .icons {
@@ -304,21 +305,27 @@ form {
   color: #fff;
   font-size: 55px;
   font-family: 'Inter', sans-serif;
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  padding-top: 25px;
-  padding-bottom: 35px;
-  margin-right: 10px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .skillstitle {
+  display: flex;
+  align-items: center;
+  padding: 20px;
   order: -1;
+}
+
+.skillstitletext {
+  padding: 20px;
+  font-size: 40px;
 }
 
 .skills-img {
   order: -2;
-  padding: 25px 0 0 0;
+  width: 20px;
+  height: 20px;
 }
 
 .skilllistcontainer {
@@ -331,25 +338,10 @@ form {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   justify-content: center;
+  text-align: center;
   color: rgb(255, 255, 255);
-  padding: 0 0 0 125px;
-}
-
-.skillitem2 li {
-  font-size: 30px;
-  font-family: 'Crete Round', serif;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  padding: 0 0 0 150px;
-}
-
-.skillitem3 li {
-  font-size: 30px;
-  font-family: 'Crete Round', serif;
-  justify-content: center;
-  color: #fff;
-  padding: 0 0 0 40px;
+  padding: 10px;
+  font-weight: 200;
 }
 
 .contactme {
@@ -583,36 +575,14 @@ textarea:hover {
     height: 100vh;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100vw;
     padding-right: 10vw;
     padding-left: 10vw;
   }
 
-  .skillstitle {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .skillstitle h2 {
-    font-size: 40px;
-  }
-
   .aboutmestyle {
     margin-left: 5vw;
-  }
-
-  .skills-img {
-    width: 20px;
-    height: 20px;
-    padding-bottom: 25px;
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .skillitem3 li {
