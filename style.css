@@ -66,6 +66,7 @@ form {
   letter-spacing: 2px;
   padding: 6px;
   transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .headline:hover {
@@ -99,6 +100,7 @@ form {
   text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
+  transition: 0.7s ease;
 }
 
 .icons {
