@@ -459,6 +459,7 @@ textarea:hover {
   #envelope {
     font-size: 21px;
     padding-right: 8vw;
+    animation: rotation 10s infinite linear;
   }
 
   .blackorange {
@@ -553,6 +554,12 @@ textarea:hover {
     width: 1fr;
     height: auto;
     margin-right: 15px;
+    transition: width 0.6s ease-in 3s;
+  }
+
+  #imageindex:hover {
+    width: 35rem;
+    transition: width 0.6s ease-in;
   }
 
   #myworktext {
