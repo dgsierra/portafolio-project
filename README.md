@@ -4,6 +4,8 @@
 
 This is my portafolio, feel free to contact me if you have any questions.
 
+[Live Preview](https://dgonzalesi.github.io/portafolio-project/) 
+
 ## Built With
 
 - HTML
@@ -11,11 +13,15 @@ This is my portafolio, feel free to contact me if you have any questions.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps:
+#To get a local copy up and running follow these simple example steps:
 - Click the Code button in the top right corner
 - Download ZIP
 - Unzip the file: hello-microverse.zip
 - Open index.html with your web browser
+
+#Online View:
+
+- [Click Here](https://dgonzalesi.github.io/portafolio-project/)
 
 ## Author
 
