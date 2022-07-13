@@ -231,6 +231,7 @@ form {
   padding: 20px;
   height: 500px;
   color: rgba(255, 255, 255, 1);
+  max-width: 328px;
 }
 
 .seeproject {
@@ -562,8 +563,8 @@ textarea:hover {
 
   .aboutme {
     background-image: url("./img/img.background.aboutme.png");
-    background-position: right;
-    background-size: 100vh;
+    background-position: right bottom;
+    background-size: 50vw;
     justify-content: center;
     border-bottom: #fff 1px solid;
     width: 100vw;
