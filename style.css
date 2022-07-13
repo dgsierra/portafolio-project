@@ -578,8 +578,6 @@ textarea:hover {
     align-items: flex-start;
     justify-content: space-evenly;
     width: 100vw;
-    padding-right: 10vw;
-    padding-left: 10vw;
   }
 
   .aboutmestyle {
