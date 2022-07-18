@@ -72,7 +72,7 @@ form {
   color: #fff;
 }
 
-.fullmenu {
+#fullmenu {
   display: none;
   cursor: pointer;
   color: #ccc;
@@ -438,7 +438,7 @@ textarea:hover {
     display: none;
   }
 
-  .fullmenu {
+  #fullmenu {
     display: flex;
     cursor: pointer;
     color: #fff;
