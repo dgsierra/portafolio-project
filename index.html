@@ -38,17 +38,19 @@
     <header>
         <nav>
             <a href="index.html" id="logonav">Jhon Doe</a>
-            <img id="menuimg" src="bars-solid.svg" alt="menu icon">
-            <ul id="fullmenu">
-                <li class="menuitem">Portafolio</li>
-                <li class="menuitem">About</li>
-                <li class="menuitem">Contact</li>
-                <li id="envelope" class="menuitem"><i class="fa-regular fa-envelope"></i></li>
+            <img id="menuimg" class="menulogo" src="bars-solid.svg" alt="menu icon">
+            <a id="closingbutton" href="">&times</a>
+            <ul id="fullmenu" class="displaymenu">
+                
+                <li id="menuitemport" class="menuitem"><a href="#welcomesection">Portfolio</a></li>
+                <li id="menuitemabout" class="menuitem"><a href="#aboutmeid">About</a></li>
+                <li id="menuitemcontact" class="menuitem"><a href="#contactmeid">Contact</a></li>
+                <li id="envelope" class="menuitem"><a href="#contactmeid"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-    <section class="blackorange">
+    <section id="welcomesection"class="blackorange">
         <div id="welcometext">
         <h1 class="headline">Hey There, I'm Alex.</h1>
         <h2 class="subheadline">I'm a Software Developer.</h2>
@@ -163,7 +165,7 @@
 
         
     </section>
-    <section class="aboutme">
+    <section id="aboutmeid" class="aboutme">
         <h2 class="headline aboutmestyle">About me.</h2>
 
         <p class="headlinetext aboutmestyle" id="textaboutme"> Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -227,10 +229,7 @@
         </div>
 
     </section>
-
-    link:css
-
-    <section class="contactme">
+    <section id="contactmeid" class="contactme">
 
         <div class="containercontact">
             <h3 id="formtitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
