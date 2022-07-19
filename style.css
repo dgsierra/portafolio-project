@@ -1,6 +1,6 @@
 a {
   list-style: none;
-  color: inherit
+  color: inherit;
 }
 
 li {
@@ -58,18 +58,18 @@ form {
   padding-left: 12px;
 }
 
-#closingbutton{
+#closingbutton {
   display: none;
   position: absolute;
   top: 0;
   right: 50px;
-  color: rgb(255, 0, 0);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 34px;
   padding: 10px;
   border-radius: 0 0 0 10px;
 }
 
-#closingbutton.active  {
+#closingbutton.active {
   display: block;
 }
 
@@ -455,7 +455,6 @@ textarea:hover {
 .menuitem.active {
   color: #fff;
   margin: 5vh;
-  /* padding-top: 7vh; */
   padding-bottom: 3vh;
   border-bottom: solid 2px;
   border-color: rgba(255, 255, 255, 0.5);
