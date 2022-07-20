@@ -1,3 +1,8 @@
+a {
+  list-style: none;
+  color: inherit;
+}
+
 li {
   list-style: none;
 }
@@ -19,6 +24,8 @@ nav {
   justify-content: space-between;
   font-size: 24px;
   padding: 10px;
+  position: fixed;
+  width: 100vw;
 }
 
 section {
@@ -51,12 +58,27 @@ form {
   padding-left: 12px;
 }
 
+#closingbutton {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 34px;
+  padding: 10px;
+  border-radius: 0 0 0 10px;
+}
+
+#closingbutton.active {
+  display: block;
+}
+
 #menuimg {
   -webkit-filter: invert(100%);
   height: 2rem;
   width: 2rem;
-  padding-right: 12px;
   letter-spacing: 0.37px;
+  margin-right: 30px;
 }
 
 .headline {
@@ -68,11 +90,25 @@ form {
   transition: 0.7s ease;
 }
 
+.classtest {
+  background-color: #ff6b00;
+}
+
+.nodisplay {
+  display: none;
+}
+
 .headline:hover {
   color: #fff;
 }
 
-.fullmenu {
+.response {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#fullmenu {
   display: none;
   cursor: pointer;
   color: #ccc;
@@ -96,7 +132,6 @@ form {
   font-weight: 100;
   color: #fff;
   font-family: 'Inter', sans-serif;
-  text-shadow: (0, 0, 0, 0.25);
   line-height: 24px;
   padding: 6px;
   transition: 0.7s ease;
@@ -177,6 +212,7 @@ form {
 .mywork {
   padding: 30px;
   height: auto;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
@@ -192,8 +228,8 @@ form {
 }
 
 #imageindex {
-  width: 450px;
-  height: 350px;
+  width: 95%;
+  height: auto;
 }
 
 #textsubtitle {
@@ -224,7 +260,6 @@ form {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: left;
   background-image: url("./img/card.background.png"), linear-gradient(#3c3a39 20%, #1c1a19);
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,7 +324,7 @@ form {
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-auto-flow: row;
-  height: fit-content;
+  height: auto;
   padding: 5vh 1vw 5vh 1vw;
 }
 
@@ -416,6 +451,26 @@ textarea:hover {
   z-index: 500;
 }
 
+.menuitem.active {
+  color: #fff;
+  margin: 5vh;
+  padding-bottom: 3vh;
+  border-bottom: solid 2px;
+  border-color: rgba(255, 255, 255, 0.5);
+  font-family: 'roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.displaymenu.active {
+  display: block;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10vh;
+  text-align: center;
+  justify-content: space-around;
+}
+
 #getintouch:focus {
   background-color: #a14300;
 }
@@ -427,7 +482,7 @@ textarea:hover {
   }
 
   #logonav {
-    padding-left: 8vw;
+    padding: 5px;
   }
 
   .menuitem {
@@ -438,7 +493,7 @@ textarea:hover {
     display: none;
   }
 
-  .fullmenu {
+  #fullmenu {
     display: flex;
     cursor: pointer;
     color: #fff;
@@ -452,7 +507,6 @@ textarea:hover {
   #envelope {
     font-size: 21px;
     padding-right: 8vw;
-    animation: rotation 10s infinite linear;
   }
 
   .blackorange {
@@ -506,12 +560,8 @@ textarea:hover {
 
   .card {
     height: auto;
-    background: linear-gradient(0deg, rgb(53, 53, 53) 0%, rgba(200, 200, 200, 0.5) 100%) url("./img/img.background.cards.png");
     background-repeat: no-repeat;
-  }
-
-  .smoke {
-    visibility: show;
+    padding: 20px;
   }
 
   .card:hover {
@@ -544,10 +594,10 @@ textarea:hover {
   }
 
   #imageindex {
-    width: 1fr;
+    width: 50%;
     height: auto;
     margin-right: 15px;
-    transition: width 0.6s ease-in 3s;
+    transition: width 0.6s ease-in 2s;
   }
 
   #imageindex:hover {
@@ -678,6 +728,6 @@ textarea:hover {
 
   .hovereffect:hover {
     background-color: #3c3a39;
-    transition: 0.7s ease;
+    transition: 0.6s ease;
   }
 }
