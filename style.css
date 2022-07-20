@@ -212,6 +212,7 @@ form {
 .mywork {
   padding: 30px;
   height: auto;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
@@ -227,8 +228,8 @@ form {
 }
 
 #imageindex {
-  width: 450px;
-  height: 350px;
+  width: 95%;
+  height: auto;
 }
 
 #textsubtitle {
@@ -593,10 +594,10 @@ textarea:hover {
   }
 
   #imageindex {
-    width: 300px;
+    width: 50%;
     height: auto;
     margin-right: 15px;
-    transition: width 0.6s ease-in 3s;
+    transition: width 0.6s ease-in 2s;
   }
 
   #imageindex:hover {

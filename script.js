@@ -1,7 +1,7 @@
 const hamburger = document.getElementById('menuimg');
 const menu = document.getElementById('fullmenu');
 const names = document.getElementById('logonav');
-const closing = document.getElementById('closingbutton');
+const closingbutton = document.getElementById('closingbutton');
 const envelope = document.getElementById('envelope');
 const body = window.innerWidth;
 const item1 = document.getElementById('menuitemport');
@@ -16,7 +16,7 @@ const listener = () => {
   envelope.classList.add('nodisplay');
   menu.classList.add('response');
   menu.style.display = 'block';
-  closing.classList.add('active');
+  closingbutton.classList.add('active');
   names.classList.add('nodisplay');
 };
 
@@ -24,11 +24,22 @@ hamburger.addEventListener('click', listener);
 
 if (body < 768) {
   document.querySelectorAll('.menuitem').forEach((n) => n.addEventListener('click', () => {
-    menu.classList.remove('huevos');
-    closing.classList.remove('active');
+    menu.classList.remove('response');
+    closingbutton.classList.remove('active');
     hamburger.classList.remove('nodisplay');
     names.classList.remove('nodisplay');
     envelope.classList.remove('nodisplay');
     menu.style.display = 'none';
   }));
 }
+
+const closing = () => {
+  menu.classList.remove('response');
+  closingbutton.classList.remove('active');
+  hamburger.classList.remove('nodisplay');
+  names.classList.remove('nodisplay');
+  envelope.classList.remove('nodisplay');
+  menu.style.display = 'none';
+};
+
+closingbutton.addEventListener('click', closing);
