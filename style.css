@@ -894,5 +894,60 @@ textarea:hover {
     width: auto;
   }
 
-  
+  #popclosingbutton {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    color: rgba(80, 80, 80, 0.7);
+    font-size: 34px;
+    padding: 10px;
+    border-radius: 0 0 0 10px;
+  }
+
+  #poptext {
+    color: #344563;
+    line-height: 2;
+    margin-left: 10px;
+  }
+
+  #popcontainerid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    width: 80vw;
+    margin-left: 1px;
+  }
+
+  #poptextbuttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #popimage {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 1px;
+  }
+
+  #popbuttonsbottom {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: space-around;
+    max-height: 100px;
+  }
+
+  .poporange {
+    color: #fff;
+    background-color: #ff6b00;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
 }
