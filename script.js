@@ -153,6 +153,7 @@ const portfoliopopup = (value) => {
           </div>
 
       </div>
+      
   </div>`;
   document.body.appendChild(popcontainer);
   const closingpop = document.querySelector('#popclosingbutton');

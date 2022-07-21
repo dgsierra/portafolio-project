@@ -71,16 +71,18 @@ form {
 
 #blurry {
   position: fixed;
-  opacity: 1;
+  opacity: 0.7;
   transition: 200ms ease-out;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(25px);
+  top: 0;
+  left: 0;
   pointer-events: none;
   width: 100vw;
   height: 100vh;
-  transform: scale(5);
+  transform: scale(3);
+  background-color: rgba(0, 0, 0);
+  filter: blur(9px);
 }
 
 #closingbutton.active {
@@ -100,7 +102,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 72vh;
+  height: 85vh;
   background-color: #fff;
   top: 50%;
   left: 50%;
@@ -118,7 +120,9 @@ form {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   text-align: left;
+  margin-top: 3vh;
   color: #172b4d;
+  max-width: 60vw;
 }
 
 #popclosingbutton {
