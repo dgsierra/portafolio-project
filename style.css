@@ -949,7 +949,6 @@ textarea:hover {
     justify-content: left;
     align-items: flex-start;
     align-content: space-around;
-    /* max-height: 100px; */
     padding-top: 10vh;
   }
 
