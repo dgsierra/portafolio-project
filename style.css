@@ -120,7 +120,7 @@ form {
   font-size: 30px;
   font-family: 'Crete Round', serif;
   text-align: left;
-  margin-top: 3vh;
+  margin-top: 15px;
   color: #172b4d;
   max-width: 60vw;
 }
@@ -139,6 +139,7 @@ form {
 #popbuttonslist {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
 }
@@ -148,7 +149,6 @@ form {
   padding: 10px 10px 10px 15px;
   font-family: 'Inter', sans-serif;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 5vh;
   color: #353535;
   font-size: 0.7rem;
 }
@@ -169,8 +169,8 @@ form {
 
 #poptext {
   color: #344563;
-  line-height: 2;
-  margin-left: 10px;
+  line-height: 1.5;
+  padding-top: 10px;
 }
 
 #popimage {
@@ -184,7 +184,7 @@ form {
   display: flex;
   justify-content: left;
   align-items: flex-start;
-  align-content: space-around;
+  align-content: center;
   max-height: 100px;
 }
 
@@ -196,6 +196,7 @@ form {
   border: none;
   margin: 7px;
   font-size: 1rem;
+  min-width: 45%;
   padding: 10px 20px 10px 20px;
 }
 
@@ -411,6 +412,7 @@ form {
 }
 
 .buttonsproject {
+  margin-top: 2rem;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 0.15fr 0.2fr 0.2fr 0.2fr;
@@ -872,6 +874,7 @@ textarea:hover {
     font-family: 'Crete Round', serif;
     text-align: left;
     color: #172b4d;
+    font-weight: 100;
   }
 
   .popbuttons {
@@ -886,6 +889,7 @@ textarea:hover {
   #popbuttonslist {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
   }
@@ -918,7 +922,9 @@ textarea:hover {
   #popcontainerid {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
     margin-top: 20px;
     width: 80vw;
     margin-left: 1px;
@@ -927,11 +933,13 @@ textarea:hover {
   #poptextbuttons {
     display: flex;
     flex-direction: column;
+    min-width: 45%;
+    max-width: 49%;
   }
 
   #popimage {
-    width: auto;
-    height: auto;
+    min-width: 45%;
+    max-width: 49%;
     margin-right: 10px;
     margin-left: 1px;
   }
@@ -941,7 +949,8 @@ textarea:hover {
     justify-content: left;
     align-items: flex-start;
     align-content: space-around;
-    max-height: 100px;
+    /* max-height: 100px; */
+    padding-top: 10vh;
   }
 
   .poporange {
