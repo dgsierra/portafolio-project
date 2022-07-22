@@ -87,7 +87,7 @@ const listener = () => {
   closingbutton.classList.add('active');
   names.classList.add('nodisplay');
 };
-popcontainer.classList.add('popupcontainer');
+popcontainer.classList.add('popupcontainermain');
 hamburger.addEventListener('click', listener);
 
 if (body < 768) {
