@@ -71,7 +71,6 @@ form {
 
 #blurry {
   position: fixed;
-  opacity: 0.7;
   transition: 200ms ease-out;
   right: 0;
   bottom: 0;
@@ -80,9 +79,9 @@ form {
   pointer-events: none;
   width: 100vw;
   height: 100vh;
-  transform: scale(3);
-  background-color: rgba(0, 0, 0);
-  filter: blur(9px);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(9px);
+  filter: blur(100px);
 }
 
 #closingbutton.active {
@@ -110,10 +109,8 @@ form {
   padding: 3%;
 }
 
-#topcontainer {
-  display: flex;
-  margin: 10px;
-  margin-bottom: 20px;
+.topcontainer {
+  margin-left: 10px;
 }
 
 #popid {
@@ -156,33 +153,41 @@ form {
 #popcontainerid {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  justify-items: center;
   margin: 10px;
-  max-width: 80vw;
+  max-width: 90vw;
+  max-height: 75%;
+  overflow: scroll;
 }
 
 #poptextbuttons {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  height: 90%;
+  max-width: 95%;
+  justify-content: space-between;
 }
 
 #poptext {
   color: #344563;
   line-height: 1.5;
-  padding-top: 10px;
+  margin-bottom: 5px;
 }
 
 #popimage {
   width: 100%;
-  height: auto;
-  margin: 20px;
-  margin-left: 1px;
+  height: 90%;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 #popbuttonsbottom {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: flex-start;
   align-content: center;
   max-height: 100px;
@@ -194,8 +199,8 @@ form {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   border: none;
-  margin: 7px;
-  font-size: 1rem;
+  margin: 7px 7px 7px 1px;
+  font-size: 13px;
   min-width: 45%;
   padding: 10px 20px 10px 20px;
 }
@@ -286,7 +291,6 @@ form {
   align-items: center;
   justify-content: center;
   padding: 0;
-  overflow: auto;
   width: 100vw;
   height: auto;
 }
@@ -856,12 +860,12 @@ textarea:hover {
   }
 
   .popupcontainer {
-    /* position: absolute; */
     position: fixed;
     display: flex;
     flex-direction: column;
+    min-height: 400px;
     width: 80vw;
-    height: 72vh;
+    height: 72%;
     background-color: #fff;
     top: 50%;
     left: 50%;
@@ -915,8 +919,8 @@ textarea:hover {
 
   #poptext {
     color: #344563;
-    line-height: 2;
     margin-left: 10px;
+    line-height: 1.8;
   }
 
   #popcontainerid {
@@ -935,21 +939,21 @@ textarea:hover {
     flex-direction: column;
     min-width: 45%;
     max-width: 49%;
+    max-height: 50vh;
+    flex-wrap: nowrap;
   }
 
   #popimage {
-    min-width: 45%;
     max-width: 49%;
-    margin-right: 10px;
-    margin-left: 1px;
+    max-height: 90%;
+    margin-top: 20px;
   }
 
   #popbuttonsbottom {
     display: flex;
     justify-content: left;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: space-around;
-    padding-top: 10vh;
   }
 
   .poporange {
@@ -958,8 +962,14 @@ textarea:hover {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     border: none;
-    margin: 10px;
+    margin: 10px 10px 1px 10px;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+  .poporange {
+    font-size: 14px;
   }
 }
