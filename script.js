@@ -157,7 +157,7 @@ const portfoliopopup = (value) => {
   </div>`;
   document.body.appendChild(popcontainer);
   const closingpop = document.querySelector('#popclosingbutton');
-  closingpop.addEventListener('click', () => document.body.removeChild(document.querySelector('.popupcontainer')));
+  closingpop.addEventListener('click', () => document.body.removeChild(document.querySelector('.popupcontainermain')));
 };
 
 const buttonportfolio = document.querySelectorAll('.orangebottom');
