@@ -69,6 +69,20 @@ form {
   border-radius: 0 0 0 10px;
 }
 
+#errormessage {
+  color: #f00;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#checkmessage {
+  color: #228c22;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
 #blurry {
   position: fixed;
   transition: 200ms ease-out;

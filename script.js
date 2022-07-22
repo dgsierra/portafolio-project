@@ -162,3 +162,28 @@ const portfoliopopup = (value) => {
 
 const buttonportfolio = document.querySelectorAll('.orangebottom');
 buttonportfolio.forEach((button) => button.addEventListener('click', portfoliopopup));
+
+// *FORM VALIDATION:
+
+const formemail = document.getElementById('inputemail');
+const form = document.getElementById('contactform');
+const labelerror = document.getElementById('errormessage');
+const labelcheck = document.getElementById('checkmessage');
+
+form.addEventListener('submit', (e) => {
+  const mailformat = (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/);
+  const nonlowercaseletters = /[^a-z]/g;
+  if (formemail.value.match(nonlowercaseletters)) {
+    if (formemail.value.match(mailformat)) {
+      labelcheck.classList.remove('nodisplay');
+      labelerror.classList.add('nodisplay');
+    } else {
+      labelerror.classList.remove('nodisplay');
+      labelcheck.classList.add('nodisplay');
+    }
+  } else {
+    labelerror.classList.remove('nodisplay');
+    labelcheck.classList.add('nodisplay');
+  }
+  e.preventDefault();
+});

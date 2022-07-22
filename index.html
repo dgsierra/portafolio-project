@@ -162,8 +162,10 @@
             <h3 id="formtitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
             <form id="contactform">
                 <input name="full_name" class="contactinput" id="inputname" type="text" maxlength="30" placeholder="Full Name" >
-                <input name="email" onsubmit="testing()" class="contactinput" id="inputemail" type="email" placeholder="Email" >
+                <input name="email" onsubmit="testing()" class="contactinput" id="inputemail" type="text" placeholder="Email" >
                 <textarea name="message" cols="30" rows="10" placeholder="Enter text here." maxlength="500" ></textarea>
+                <label id="errormessage" class="nodisplay">Format not valid, the form didn't send.</label>
+                <label id="checkmessage" class="nodisplay">The format is valid, it was sent.</label>
                 <input id="getintouch" type="submit" value="Get in touch">
             </form>
         </div>    
