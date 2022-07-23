@@ -161,9 +161,9 @@
         <div class="containercontact">
             <h3 id="formtitle">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
             <form id="contactform">
-                <input name="full_name" class="contactinput" id="inputname" type="text" maxlength="30" placeholder="Full Name" >
-                <input name="email" type="email" class="contactinput" id="inputemail" placeholder="Email" >
-                <textarea name="message" cols="30" rows="10" placeholder="Enter text here." maxlength="500" ></textarea>
+                <input name="full_name" onkeyup = "dataform()" class="contactinput" id="inputname" type="text" maxlength="30" placeholder="Full Name" >
+                <input name="email" onkeyup = "dataform()" type="email" class="contactinput" id="inputemail" placeholder="Email" >
+                <textarea name="message" onkeyup = "dataform()" cols="30" rows="10" placeholder="Enter text here." maxlength="500" id="textarea"></textarea>
                 <label id="errormessage" class="nodisplay">Format not valid, the form didn't send.</label>
                 <label id="checkmessage" class="nodisplay">The format is valid, it was sent.</label>
                 <input id="getintouch" type="submit" value="Get in touch">

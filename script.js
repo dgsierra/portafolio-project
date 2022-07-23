@@ -10,7 +10,7 @@ const item3 = document.getElementById('menuitemcontact');
 const popcontainer = document.createElement('div');
 const data = [
   {
-    name: 'Website Protfolio',
+    name: 'Testing',
     description: "Loret ipsum of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     image: './images/popup.png',
     technology: ['HTML', 'CSS', 'Ruby'],
@@ -179,4 +179,18 @@ form.addEventListener('submit', (e) => {
     labelcheck.classList.add('nodisplay');
   }
   e.preventDefault();
+});
+
+// *DATA STORAGE:
+
+// const array = [form.full_name.value, form.email.value, form.message.value];
+const dataform = () => localStorage.setItem('userdata', [form.full_name.value, form.email.value, form.message.value]);
+
+document.addEventListener('keypress', dataform);
+const userstorage = localStorage.getItem('userdata').split(',');
+
+document.addEventListener('DOMContentLoaded', () => {
+  form.full_name.value = userstorage[0];
+  form.email.value = userstorage[1];
+  form.message.value = userstorage[2];
 });
