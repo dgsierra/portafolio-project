@@ -190,7 +190,5 @@ document.addEventListener('keypress', dataform);
 const userstorage = localStorage.getItem('userdata').split(',');
 
 document.addEventListener('DOMContentLoaded', () => {
-  form.full_name.value = userstorage[0];
-  form.email.value = userstorage[1];
-  form.message.value = userstorage[2];
+  [form.full_name.value, form.email.value, form.message.value] = [userstorage[0], userstorage[1], userstorage[2]];
 });
