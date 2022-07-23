@@ -183,17 +183,14 @@ form.addEventListener('submit', (e) => {
 
 // *DATA STORAGE:
 
-// const array = [form.full_name.value, form.email.value, form.message.value];
 const dataform = () => localStorage.setItem('userdata', [form.full_name.value, form.email.value, form.message.value]);
 
-document.addEventListener('keypress', dataform);
+document.addEventListener('keydown', dataform);
+
 const userstorage = localStorage.getItem('userdata').split(',');
-
-
-
+const loadname = document.getElementById('inputname');
+const loademail = document.getElementById('inputemail');
+const loadtext = document.getElementById('textarea');
 document.addEventListener('DOMContentLoaded', () => {
-  const name = form.full_name.value;
-  const email = form.email.value;
-  const message = form.message.value;
-  [name, email, message] = userstorage;
+  [(loadname.value), (loademail.value), (loadtext.value)] = userstorage;
 });
