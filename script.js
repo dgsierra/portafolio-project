@@ -10,34 +10,34 @@ const item3 = document.getElementById('menuitemcontact');
 const popcontainer = document.createElement('div');
 const data = [
   {
-    name: 'Website Protfolio',
-    description: "Loret ipsum of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
-    technology: ['HTML', 'CSS', 'Ruby'],
-    livelink: '#',
-    sourcelink: '#',
+    name: 'To Do List',
+    description: "A small web app for keep track of your tasks. It's a simple web app that allows you to create tasks, mark them as done and delete them.",
+    image: './img/to_do_screenshot.pop.png',
+    technology: ['HTML', 'CSS', 'JavaScript'],
+    livelink: 'https://dgonzalesi.github.io/To-Do-List-Webpack/',
+    sourcelink: 'https://github.com/dgonzalesi/To-Do-List-Webpack',
     id: 'btn1',
     class: 'cardsbase',
   },
 
   {
-    name: 'Profesional Art Printing Data',
-    description: "Batman is the best superhero of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
-    technology: ['React', 'CSS', 'Javascript'],
-    livelink: '#',
-    sourcelink: '#',
+    name: 'Awesome Books',
+    description: 'a web app that allows you to add books and save them to your personal library.',
+    image: './img/Awesome.Books.pop.png',
+    technology: ['HTML', 'CSS', 'Javascript'],
+    livelink: 'https://dgonzalesi.github.io/Awesome-Books/',
+    sourcelink: 'https://github.com/dgonzalesi/Awesome-Books',
     id: 'btn2',
     class: 'cardsbase',
   },
 
   {
-    name: 'Data Dashboard Healthcare',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
-    technology: ['HTML', 'CSS', 'Bootstrap'],
-    livelink: '#',
-    sourcelink: '#',
+    name: 'Web Page Mockup',
+    description: 'This is a small web page that i build from 0 from screenshoots and mockups of a web page.',
+    image: './img/capstone_project.pop.png',
+    technology: ['HTML', 'CSS', 'JavaScript'],
+    livelink: 'https://dgonzalesi.github.io/capstone-webpage/',
+    sourcelink: 'https://github.com/dgonzalesi/capstone-webpage',
     id: 'btn3',
     class: 'cardsbase',
   },
@@ -45,7 +45,7 @@ const data = [
   {
     name: 'Website Protfolio',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
+    image: './img/pop.img.png',
     technology: ['HTML', 'CSS', 'Bootstrap'],
     livelink: '#',
     sourcelink: '#',
@@ -56,7 +56,7 @@ const data = [
   {
     name: 'Profesional Art Printing Data',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
+    image: './img/pop.img.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: '#',
     sourcelink: '#',
@@ -67,7 +67,7 @@ const data = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    image: './images/popup.png',
+    image: './img/pop.img.png',
     technology: ['HTML', 'CSS', 'Javascript'],
     livelink: '#',
     sourcelink: '#',
@@ -140,15 +140,16 @@ const portfoliopopup = (value) => {
               <li class="popbuttons"><a href="#">${data[value].technology[2]}</a></li>
           </ul>
       </div>
+
       <div id="popcontainerid">
-          <img src="./img/pop.img.png" id="popimage" alt="popup image ten">
+          <img src="${data[value].image}" id="popimage" alt="popup image ten">
           <div id="poptextbuttons">
               <p id="poptext">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
               </p>
               <div id="popbuttonsbottom">
-                  <button class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></button>
-                  <button class="poporange">See Source <i class="fa-brands fa-github"></i></button>
+                  <a href="${data[value].livelink}" target="_blank" class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></a>
+                  <a href="${data[value].sourcelink}" target="_blank" class="poporange">See Source <i class="fa-brands fa-github"></i></a>
               </div>
           </div>
 
@@ -157,8 +158,40 @@ const portfoliopopup = (value) => {
   </div>`;
   document.body.appendChild(popcontainer);
   const closingpop = document.querySelector('#popclosingbutton');
-  closingpop.addEventListener('click', () => document.body.removeChild(document.querySelector('.popupcontainer')));
+  closingpop.addEventListener('click', () => document.body.removeChild(document.querySelector('.popupcontainermain')));
 };
 
 const buttonportfolio = document.querySelectorAll('.orangebottom');
 buttonportfolio.forEach((button) => button.addEventListener('click', portfoliopopup));
+
+// *FORM VALIDATION:
+
+const formemail = document.getElementById('inputemail');
+const form = document.getElementById('contactform');
+const labelerror = document.getElementById('errormessage');
+const labelcheck = document.getElementById('checkmessage');
+
+form.addEventListener('submit', (e) => {
+  if (formemail.value === formemail.value.toLowerCase()) {
+    labelcheck.classList.remove('nodisplay');
+    labelerror.classList.add('nodisplay');
+  } else {
+    labelerror.classList.remove('nodisplay');
+    labelcheck.classList.add('nodisplay');
+  }
+  e.preventDefault();
+});
+
+// *DATA STORAGE:
+
+const dataform = () => localStorage.setItem('userdata', [form.full_name.value, form.email.value, form.message.value]);
+
+document.addEventListener('keydown', dataform);
+
+const userstorage = localStorage.getItem('userdata').split(',');
+const loadname = document.getElementById('inputname');
+const loademail = document.getElementById('inputemail');
+const loadtext = document.getElementById('textarea');
+document.addEventListener('DOMContentLoaded', () => {
+  [(loadname.value), (loademail.value), (loadtext.value)] = userstorage;
+});
