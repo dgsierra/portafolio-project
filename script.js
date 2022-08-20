@@ -10,12 +10,12 @@ const item3 = document.getElementById('menuitemcontact');
 const popcontainer = document.createElement('div');
 const data = [
   {
-    name: 'Testing',
-    description: "Loret ipsum of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    name: 'To Do List',
+    description: "A small web app for keep track of your tasks. It's a simple web app that allows you to create tasks, mark them as done and delete them.",
     image: './images/popup.png',
-    technology: ['HTML', 'CSS', 'Ruby'],
-    livelink: '#',
-    sourcelink: '#',
+    technology: ['HTML', 'CSS', 'JavaScript'],
+    livelink: 'https://dgonzalesi.github.io/To-Do-List-Webpack/',
+    sourcelink: 'https://github.com/dgonzalesi/To-Do-List-Webpack',
     id: 'btn1',
     class: 'cardsbase',
   },
@@ -26,7 +26,7 @@ const data = [
     image: './images/popup.png',
     technology: ['React', 'CSS', 'Javascript'],
     livelink: '#',
-    sourcelink: '#',
+    sourcelink: 'https://github.com/dgonzalesi/Awesome-Books',
     id: 'btn2',
     class: 'cardsbase',
   },
@@ -147,7 +147,7 @@ const portfoliopopup = (value) => {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
               </p>
               <div id="popbuttonsbottom">
-                  <button class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></button>
+                  <a href="${data[value].livelink}" class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></a>
                   <button class="poporange">See Source <i class="fa-brands fa-github"></i></button>
               </div>
           </div>
