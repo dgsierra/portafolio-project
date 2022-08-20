@@ -12,7 +12,7 @@ const data = [
   {
     name: 'To Do List',
     description: "A small web app for keep track of your tasks. It's a simple web app that allows you to create tasks, mark them as done and delete them.",
-    image: './img/pop.img.png',
+    image: './img/to_do_screenshot.pop.png',
     technology: ['HTML', 'CSS', 'JavaScript'],
     livelink: 'https://dgonzalesi.github.io/To-Do-List-Webpack/',
     sourcelink: 'https://github.com/dgonzalesi/To-Do-List-Webpack',
@@ -23,9 +23,9 @@ const data = [
   {
     name: 'Awesome Books',
     description: 'a web app that allows you to add books and save them to your personal library.',
-    image: './img/pop.img.png',
+    image: './img/Awesome.Books.pop.png',
     technology: ['HTML', 'CSS', 'Javascript'],
-    livelink: '#',
+    livelink: 'https://dgonzalesi.github.io/Awesome-Books/',
     sourcelink: 'https://github.com/dgonzalesi/Awesome-Books',
     id: 'btn2',
     class: 'cardsbase',
@@ -34,7 +34,7 @@ const data = [
   {
     name: 'Web Page Mockup',
     description: 'This is a small web page that i build from 0 from screenshoots and mockups of a web page.',
-    image: './img/pop.img.png',
+    image: './img/capstone_project.pop.png',
     technology: ['HTML', 'CSS', 'JavaScript'],
     livelink: 'https://dgonzalesi.github.io/capstone-webpage/',
     sourcelink: 'https://github.com/dgonzalesi/capstone-webpage',
@@ -148,8 +148,8 @@ const portfoliopopup = (value) => {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.
               </p>
               <div id="popbuttonsbottom">
-                  <a href="${data[value].livelink}" class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></a>
-                  <a href="${data[value].sourcelink}" class="poporange">See Source <i class="fa-brands fa-github"></i></a>
+                  <a href="${data[value].livelink}" target="_blank" class="poporange">See Live <i class="fa-solid fa-share-from-square"></i></a>
+                  <a href="${data[value].sourcelink}" target="_blank" class="poporange">See Source <i class="fa-brands fa-github"></i></a>
               </div>
           </div>
 
